@@ -7,9 +7,8 @@ const KeyPad = props => {
   return (
     <div className="keypad">
       <KeyPadRow>
-        <Button onPress={props.onPress}>C</Button>
-        <Button onPress={props.onPress}>&larr;</Button>
-        <Button onPress={props.onPress}>%</Button>
+        <Button onPress={props.onPress} type='clear'>C</Button>
+        <Button onPress={props.onPress} type='back'>&larr;</Button>
         <Button onPress={props.onPress}>/</Button>
       </KeyPadRow>
       <KeyPadRow>
@@ -33,7 +32,9 @@ const KeyPad = props => {
       <KeyPadRow>
         <Button onPress={props.onPress}>0</Button>
         <Button onPress={props.onPress}>.</Button>
-        <Button  onPress={props.onPress}type='large'>=</Button>
+        <Button onPress={props.onPress} type="large">
+          =
+        </Button>
       </KeyPadRow>
     </div>
   );

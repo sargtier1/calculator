@@ -5,6 +5,9 @@ const Button = props => {
 
     if (typeof props !== 'undefined' && typeof props.type !== 'undefined')
     classes.push('btn--' + props.type);
+
+    if (typeof props !== 'undefined' && typeof props.type !== 'undefined')
+    classes.push('btn--' + props.type)
      
     return (
         <button 

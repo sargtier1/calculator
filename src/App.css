@@ -8,11 +8,12 @@ footer {
 }
 
 .btn {
+  color: lightgray;
   width: 25%;
   height: 100%;
   font-size: 3rem;
   font-family: inherit;
-  background-color: var(--color-white);
+  background-color: #373737;
   border: 1px solid transparent;
   outline: none;
   display: flex;
@@ -21,22 +22,48 @@ footer {
   transition: all .2s;
 }
 .btn:hover {
-  color: var(--color-light-white);
-  background-color: var(--color-tomato);
+  color: whitesmoke;
+  background-color: darkgray;
 }
 .btn:active {
   transform: scale(.95);
 }
 
+.clear {
+  background-color: lightcoral;
+}
+
 .btn--large {
   width: 50%;
-  color: var(--color-white);
-  background-color: lightcoral;
+  color: white;
+  background-color: lightgreen;
   transition: all .2s;
 }
 .btn--large:hover {
-  background-color: var(--color-white);
-  color: var(--color-tomato);
+  background-color: green;
+  color: white;
+}
+
+.btn--clear {
+  width: 50%;
+
+  color: white;
+  background-color: lightcoral;
+  transition: all .2s;
+}
+.btn--clear:hover {
+  background-color: red;
+  color: white;
+}
+
+.btn--back {
+  color: darkgrey;
+  background-color: yellow;
+  transition: all .2s;
+}
+.btn--back:hover {
+  background-color:gold;
+  color: white;
 }
 
 .keypad-row {
@@ -53,14 +80,14 @@ footer {
 #calculator {
   height: 60vh;
   width: auto;
-  background-color: whitesmoke;
+  background-color: #373737;
   margin: auto;
 }
 
 #screen {
   width: 100%;
   height: 15vh;
-  background-color: lightcoral;
+  background-color: #474747;
   color: whitesmoke;
   padding: 0 2rem;
   overflow: hidden;
