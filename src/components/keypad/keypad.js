@@ -1,14 +1,18 @@
-import React from "react";
+import React from 'react'
 
-import KeyPadRow from "../keypadrow/keyPadRow";
-import Button from "../button/button";
+import KeyPadRow from '../keypadrow/keyPadRow'
+import Button from '../button/button'
 
 const KeyPad = props => {
   return (
-    <div className="keypad">
+    <div className='keypad'>
       <KeyPadRow>
-        <Button onPress={props.onPress} type='clear'>C</Button>
-        <Button onPress={props.onPress} type='back'>&larr;</Button>
+        <Button onPress={props.onPress} type='clear'>
+          C
+        </Button>
+        <Button onPress={props.onPress} type='back'>
+          &larr;
+        </Button>
         <Button onPress={props.onPress}>/</Button>
       </KeyPadRow>
       <KeyPadRow>
@@ -29,15 +33,17 @@ const KeyPad = props => {
         <Button onPress={props.onPress}>1</Button>
         <Button onPress={props.onPress}>+</Button>
       </KeyPadRow>
-      <KeyPadRow>
-        <Button onPress={props.onPress}>0</Button>
+      <KeyPadRow type='left'>
+        <Button onPress={props.onPress} type='left'>
+          0
+        </Button>
         <Button onPress={props.onPress}>.</Button>
-        <Button onPress={props.onPress} type="large">
+        <Button onPress={props.onPress} type='large'>
           =
         </Button>
       </KeyPadRow>
     </div>
-  );
-};
+  )
+}
 
-export default KeyPad;
+export default KeyPad
