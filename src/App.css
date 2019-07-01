@@ -87,6 +87,7 @@ footer {
 #calculator {
   height: 60vh;
   width: auto;
+  max-width: 750px;
   background-color: #373737;
   margin: auto;
   border-radius: 30px;
@@ -133,7 +134,7 @@ html {
 body {
   background-color: ghostwhite;
   margin: 0 auto;
-  max-width: 750px;
+  max-width: 1000px;
   padding: 1rem;
   display: flex;
   flex-direction: column;
