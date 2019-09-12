@@ -33,6 +33,7 @@ const KeyPad = props => {
         <Button onPress={props.onPress}>1</Button>
         <Button onPress={props.onPress}>+</Button>
       </KeyPadRow>
+      
       <KeyPadRow type='left'>
         <Button onPress={props.onPress} type='left'>
           0
